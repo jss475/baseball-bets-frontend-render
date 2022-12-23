@@ -15,7 +15,7 @@ export default function Players() {
   //fetches the initial player data
   useEffect(() => {
     const getPlayers = async () => {
-      const res = await fetch("https://rails-o1cc.onrender.com/players");
+      const res = await fetch("http://rails-o1cc:10000/players");
       if (res.ok) {
         setPlayers(await res.json());
       }
