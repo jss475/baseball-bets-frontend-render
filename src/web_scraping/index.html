@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./extract_cricket_world_cups_list.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="name-container">
+        <form id="name-box">
+          <input type="text" id="name" placeholder="Your name" />
+          <input type="submit" id="name-btn" value="Submit" />
+        </form>
+        <div id="winner-list">
+          <div><b>Winners!</b></div>
+        </div>
+      </div>
+      <h1 id="title">TV Quiz</h1>
+      <p></p>
+    </header>
+
+    <button id="change-color"></button>
+
+    <section id="quiz-body">
+      <h4>
+        Get 3 questions in a row correct to continue to the final question
+      </h4>
+      <h3>Press Start To Begin</h3>
+      <img id="tv-image" />
+      <br />
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h1 id="message"></h1>
+        </div>
+      </div>
+      <div id="answer-body"></div>
+      <br />
+      <button id="start-button">Start</button>
+      <div id="rating-answer"></div>
+    </section>
+  </body>
+</html>

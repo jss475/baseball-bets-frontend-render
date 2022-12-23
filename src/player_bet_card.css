@@ -1,0 +1,8 @@
+/* Specifically for BetsCardForPlayers.jsx */
+
+.badge-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------------------------------------- */

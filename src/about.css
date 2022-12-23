@@ -1,0 +1,40 @@
+.about-title {
+  font-size: 100px;
+  font-family: "Lato", sans-serif;
+}
+
+.about-title-container {
+  width: 100%;
+  text-align: center;
+  background-image: url("cheering.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background-color: #2472ef;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.about-explanation-container {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.about-explanation-img {
+  width: 50%;
+  margin: 10px;
+  box-shadow: 10px 10px 10px #999;
+  border-radius: 15px;
+}
+
+.about-explanation {
+  font-family: "Lato", sans-serif;
+  padding: 25px;
+}
+
+.embed-responsive.container {
+  width: 100%;
+  text-align: center;
+}

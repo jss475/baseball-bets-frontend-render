@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+  background-color: rgb(228, 228, 228);
+  background-repeat: repeat-y;
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+  background-color: rgb(228, 228, 228);
+  background-repeat: repeat-y;
+  margin: 0;
+}
+
+.d-inline-block {
+  mix-blend-mode: multiply;
+}
+
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 10px;
+  margin-top: 25px;
+}
