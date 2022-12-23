@@ -39,7 +39,7 @@ function BetsContainer() {
   //fetch all the bets data
   useEffect(() => {
     const getBets = async () => {
-      let req = await fetch("/bets");
+      let req = await fetch("https://rails-o1cc.onrender.com/bets");
 
       if (req.ok) {
         let res = await req.json();

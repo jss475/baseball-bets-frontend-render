@@ -13,7 +13,7 @@ export default function Login({ handleLogin }) {
 
     let form = new FormData(document.querySelector("#login-form"));
 
-    let req = await fetch("/login", {
+    let req = await fetch("https://rails-o1cc.onrender.com/login", {
       method: "POST",
       body: form,
     });

@@ -33,7 +33,7 @@ function BetsForm({ bet, handleAddBet, handleDeleteBet }) {
       body: form,
     };
 
-    const req = await fetch("/user_bets", configObj);
+    const req = await fetch("https://rails-o1cc.onrender.com/user_bets", configObj);
     const res = await req.json();
     if(res["error"]){
       if(res["status"] === 500){
@@ -66,7 +66,7 @@ function BetsForm({ bet, handleAddBet, handleDeleteBet }) {
       body: form,
     };
 
-    const req = await fetch(`/user_bets/${newUserBet.id}`, configObj);
+    const req = await fetch(`https://rails-o1cc.onrender.com/user_bets/${newUserBet.id}`, configObj);
     const res = await req.json();
 
     req.ok ? handleOkReq(res) : handleErrorReq(res);
@@ -80,7 +80,7 @@ function BetsForm({ bet, handleAddBet, handleDeleteBet }) {
       method: "DELETE",
     };
 
-    const req = await fetch(`/user_bets/${newUserBet.id}`, configObj);
+    const req = await fetch(`https://rails-o1cc.onrender.com/user_bets/${newUserBet.id}`, configObj);
     const data = await req.json();
     handleDeleteBet(data);
     setBetFormSubmit((betFormSubmit) => !betFormSubmit);

@@ -8,7 +8,7 @@ export default function AddMoney() {
     const addMoney = document.querySelector("#add-money-form");
     const form = new FormData(addMoney);
 
-    let req = await fetch("/add-money", {
+    let req = await fetch("https://rails-o1cc.onrender.com/add-money", {
       method: "PATCH",
       body: form,
     });

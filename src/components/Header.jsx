@@ -7,7 +7,7 @@ export default function Header({ isLoggedin, handleLogin }) {
   let history = useHistory();
 
   const handleClick = async () => {
-    await fetch("/logout", {
+    await fetch("https://rails-o1cc.onrender.com/logout", {
       method: "DELETE",
     });
 

@@ -8,7 +8,7 @@ export default function User({ handleLogin }) {
 
   useEffect(() => {
     const validateUser = async () => {
-      let req = await fetch("/validate_user");
+      let req = await fetch("https://rails-o1cc.onrender.com/validate_user");
 
       if (req.ok) {
         setUser(await req.json());

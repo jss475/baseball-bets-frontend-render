@@ -13,7 +13,7 @@ export default function Signup({ handleLogin }) {
 
     let form = new FormData(document.querySelector("#signup-form"));
 
-    let req = await fetch("/signup", {
+    let req = await fetch("https://rails-o1cc.onrender.com/signup", {
       method: "POST",
       body: form,
     });
