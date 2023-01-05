@@ -9,9 +9,11 @@ export default function User({ handleLogin }) {
   useEffect(() => {
     const validateUser = async () => {
       let req = await fetch("https://rails-o1cc.onrender.com/validate_user");
-
+ 
       if (req.ok) {
+        
         setUser(await req.json());
+        console.log(req.json())
       } else {
         handleLogin(false);
         history.push("/login");
@@ -22,7 +24,10 @@ export default function User({ handleLogin }) {
   }, [handleLogin, history]);
 
   const { user_bets, name, money, winnings } = user;
-  console.log(user)
+  console.log(name)
+  console.log(money)
+  console.log(winnings)
+  console.log(user_bets)
 
   return (
     <>
