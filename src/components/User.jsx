@@ -15,6 +15,7 @@ export default function User({ handleLogin }) {
         setUser(await req.json());
         console.log(req.json())
       } else {
+        console.log(req.json())
         handleLogin(false);
         history.push("/login");
       }
