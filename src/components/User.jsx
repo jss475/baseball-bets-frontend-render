@@ -24,6 +24,7 @@ export default function User({ handleLogin }) {
     validateUser();
   }, [handleLogin, history]);
 
+  console.log(user)
   const { user_bets, name, money, winnings } = user;
   console.log(name)
   console.log(money)
