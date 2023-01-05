@@ -52,7 +52,7 @@ export default function User({ handleLogin }) {
         <h1 className="user-bet-message">Here are the bets you've made!</h1>
       ) : null}
 
-      {user_bets.length > 0 ? (
+      {user_bets > 0 ? (
         <ul>
           {user_bets.map((el, i) => (
             <li key={i}>{el.user_message}</li>
