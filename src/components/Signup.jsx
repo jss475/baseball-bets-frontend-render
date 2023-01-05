@@ -36,13 +36,14 @@ export default function Signup({ handleLogin }) {
 
   return (
     <>
-      <div className="mt-2">
-        {errors.map((err, i) => (
-          <p key={i}>{err}</p>
-        ))}
-      </div>
+
       <div className="log-in-container">
         <Form id="signup-form" onSubmit={handleSubmit}>
+          <div className="mt-2">
+            {errors.map((err, i) => (
+              <p style="color:red" key={i}>{err}</p>
+            ))}
+          </div>
           <Form.Group className="my-3">
             <Form.Label>Your Name</Form.Label>
             <Form.Control
